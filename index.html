@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentation Slides test with reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Two stylesheets for the Appearance plugin -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+		<link rel="stylesheet" href="plugin/appearance/appearance.css">
+
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+			<section data-state="titleSlide" data-background-image="https://raw.githubusercontent.com/Woodward-Library/biol450-library-resources/main/dist/backgroundUBC4.jpg" >
+				
+				<h1>Presentation Title</h1>
+				<h3> Subject </h3>
+				<h4> Name <h4>
+				<h4> Date </h4>
+				
+			</section>
+			
+			<section>
+				<h2> Basic new slide - Heading </h2>
+				<p> Content here </p>
+			</section>
+		
+
+			<section>
+				<h2>Bullet point example</h2>
+				<ul class="animated bounceInLeft">	
+					<li> Bullet 1 </li>
+					<li> Bullet 2 </li>
+					  <ul>
+					    <li> Sub Bullet 1</li>
+					    <li> Sub Bullet 2</li>		    
+				   	  </ul>
+					<li> Bullet 3 </li>
+					
+				</ul>
+			</section>
+
+					
+			<section data-transition="slide">
+				<h2> Heading 2 </h3> 
+				<h4> Sub Heading </h4>
+				<p style="text-align:left;" class="fragment fade-up">
+				  Point 1 - reveal 1
+				</p>
+				<p style="text-align:left;" class="fragment fade-up">
+				  Point 2 - reveal 2
+				</p>
+			</section>					
+					
+									
+			<section  data-background-iframe="https://search.library.ubc.ca/#general" data-state="dropHeading">
+				<span>
+				<h2> Embedded website example </h2>
+				   <h4> Not compatible with all websites </h4>
+				</span>
+			</section>
+					
+			<section>
+				<h3>Embedded Image Example</h3>			
+				<img src="https://raw.githubusercontent.com/Woodward-Library/biol450-library-resources/main/dist/pubmed.png" alt="PubMed">
+				Insert the link to your image in the img src tag: <img scr="yourImageHere.org">
+			</section>					
+								
+
+			<section>
+				<h2> Contact Information <h3>
+				<h4> Name <h4>
+				<h4><a href="mailto:yourEmailAddress@UBC.CA">first.last@UBC.CA</a><h4>					
+				<h4><a href="https://www.library.ubc.ca/">https://www.library.ubc.ca/</a><h4>									
+			</section>
+			
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<script src="plugin/helpbutton/helpbutton.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/appearance/appearance.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				progress: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu,HelpButton, RevealZoom, Appearance],
+
+
+
+			});
+		</script>
+	</body>
+</html>
